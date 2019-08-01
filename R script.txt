@@ -1,0 +1,17 @@
+runStatistics <- function(n=1000) {
+    randomNumbers <- runif(n, 0.0, 100.0)
+    sum <- 0.0
+    for (i in 1:n) {
+        sum <- sum + randomNumbers[i]
+    }
+    avg <- sum / n
+    totalSqrErr <- 0
+    for (i in 1:n) {
+        totalSqrErr <- totalSqrErr + (randomNumbers[i] - avg)^2
+    }
+    variance <- totalSqrErr / n
+    stdDev <- sqrt(variance)
+    return(list(stdDev, variance))
+}
+
+runStatistics()
