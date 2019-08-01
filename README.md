@@ -1,6 +1,7 @@
 # BigData-AzureTest
 
 Robert Schwartzberg (rds407)
+
 CS-GY 6513 - Summer 2019
 
 The R script generates 1000 random numbers from 0 to 100 and computes the standard deviation and variance.
